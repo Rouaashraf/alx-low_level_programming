@@ -14,11 +14,12 @@ int main(void)
 	{
 		for (digit2 = digit1 + 1; digit2 <= 9; digit2++)
 		{
-			putchar(digit1 + '0');
-			putchar(digit2 + '0');
+			printf("%02d", digit1);
+			putchar(',');
+			putchar(' ');
+			printf("%02d", digit2);
 			if (digit1 != 8 || digit2 != 9)
 			{
-				putchar(' ');
 				putchar(' ');
 			}
 		}
