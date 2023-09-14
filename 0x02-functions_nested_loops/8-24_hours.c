@@ -1,4 +1,3 @@
-#include "jack_bauer.h"
 #include "main.h"
 
 /**
