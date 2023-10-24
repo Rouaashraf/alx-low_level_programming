@@ -16,7 +16,7 @@ listint_t *get_nodeint_at_index(const listint_t *head, unsigned int index)
 	while (current != NULL)
 	{
 		if (count == index)
-			return (listint_t *)current;
+			return ((listint_t *)current);
 		count++;
 		current = current->next;
 	}
