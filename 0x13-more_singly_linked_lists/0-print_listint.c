@@ -2,6 +2,13 @@
 #include <stdio.h>
 #include "lists.h"
 
+/**
+ * print_listint - prints a linked lists
+ * @h: pointer to first node
+ *
+ * Return:size of list
+ */
+
 size_t print_listint(const listint_t *h)
 {
 	size_t count = 0;
@@ -13,5 +20,6 @@ size_t print_listint(const listint_t *h)
 		count++;
 		current = current->next;
 	}
-	return count;
+
+	return (count);
 }
