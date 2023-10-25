@@ -1,5 +1,6 @@
 #ifndef LISTS_H
 #define LISTS_H
+
 #include <stddef.h>
 
 /**
@@ -8,9 +9,8 @@
  * @next: points to the next node
  *
  * Description: singly linked list node structure
+ * for Holberton project
  */
-
-/* Structure for the linked list */
 typedef struct listint_s
 {
 	int n;
@@ -20,7 +20,9 @@ typedef struct listint_s
 /* Function prototypes */
 size_t print_listint(const listint_t *h);
 listint_t *add_nodeint_end(listint_t **head, int n);
-void free_listint(listint_t *head);
+void free_listint(listint_t **head);
+listint_t *add_nodeint_end(listint_t **head, int n);
+listint_t *reverse_listint(listint_t **head);
 void free_listint2(listint_t **head);
 int pop_listint(listint_t **head);
 listint_t *get_nodeint_at_index(const listint_t *head, unsigned int index);
