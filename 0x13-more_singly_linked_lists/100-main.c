@@ -10,7 +10,9 @@
  */
 int main(void)
 {
-	listint_t *head;
+	listint_t *head = NULL;
+	listint_t *head2 = NULL;
+	listint_t *node = NULL;
 
 	head = NULL;
 	add_nodeint_end(&head, 0);
